@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
 
         body: Column(
-
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding: EdgeInsets.fromLTRB(20, 80, 0, 0),
@@ -40,7 +40,29 @@ class MyApp extends StatelessWidget {
                       )
                     ),
                   ),
-
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              child:
+              Column (
+                children: [
+                  Container(
+                    padding: EdgeInsets.fromLTRB(20, 20, 165, 50),
+                    decoration: BoxDecoration(
+                      color: Colors.greenAccent,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 12),
+                        Text("150,750 CFA", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),),
+                        Text("Total Balance", style: TextStyle(color: Colors.white),),
+                      ],
+                    ),
+                  )
                 ],
               ),
             )
