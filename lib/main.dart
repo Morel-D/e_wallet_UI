@@ -72,6 +72,8 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+
+            // Services
             Container(
               padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
               child: Row(
@@ -147,7 +149,159 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
+
+            Container(
+              padding: EdgeInsets.fromLTRB(30, 0, 40, 0),
+              child: Divider(height: 60),
+            ),
+
+            // Transactions
+            Container(
+              padding: EdgeInsets.fromLTRB(30, 0, 40, 0),
+              child: Column (
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Heading
+                  Container(
+                    child: Row(
+                      children: [
+                        Text("Transactions", style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+                        SizedBox(width: 100),
+                        Text("Invoice (CFA)", style: TextStyle(color: Colors.grey)),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 32),
+
+                  // Activities
+                  Container(
+                    child: Row(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(15),
+                          decoration: BoxDecoration(
+                            color: Colors.indigoAccent,
+                            borderRadius: BorderRadius.circular(10)
+                          ),
+                          child: Icon(Icons.electrical_services, color: Colors.white),
+                        ),
+                        SizedBox(width: 12),
+                        Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Today', style: TextStyle(color: Colors.grey)),
+                              Text('Electric Bill', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 90),
+                        Text('-12,500', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                      ],
+                    )
+                  ),
+
+                  SizedBox(height: 20),
+                  Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(15),
+                            decoration: BoxDecoration(
+                                color: Colors.yellow,
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: Icon(Icons.water_drop, color: Colors.white),
+                          ),
+                          SizedBox(width: 12),
+                          Container(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Today', style: TextStyle(color: Colors.grey)),
+                                Text('Water Bill', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 100),
+                          Text('-26,750', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                        ],
+                      )
+                  ),
+
+
+                  SizedBox(height: 20),
+                  Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(15),
+                            decoration: BoxDecoration(
+                                color: Colors.orangeAccent,
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: Icon(Icons.car_crash, color: Colors.white),
+                          ),
+                          SizedBox(width: 12),
+                          Container(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Yesterday', style: TextStyle(color: Colors.grey)),
+                                Text('Car Insurance', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 70),
+                          Text('-57,100', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                        ],
+                      )
+                  ),
+
+
+                  SizedBox(height: 20),
+                  Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(15),
+                            decoration: BoxDecoration(
+                                color: Colors.brown,
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: Icon(Icons.wifi, color: Colors.white),
+                          ),
+                          SizedBox(width: 12),
+                          Container(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Yesterday', style: TextStyle(color: Colors.grey)),
+                                Text('Internet', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 100),
+                          Text('-10,000', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                        ],
+                      )
+                  ),
+                  SizedBox(height: 10),
+                  Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text("View More", style: TextStyle(color: Colors.grey)),
+                        SizedBox(width: 5),
+                        Icon(Icons.remove_red_eye, color: Colors.grey,)
+                      ],
+                    ),
+                  )
+                ],
+              )
+            ),
+
           ],
         )
       ),
