@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.fromLTRB(20, 80, 0, 0),
+              padding: EdgeInsets.fromLTRB(20, 60, 0, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -31,7 +31,13 @@ class MyApp extends StatelessWidget {
                      ],
                    ),
                  ),
-                  SizedBox(width: 150),
+                  SizedBox(width: 110),
+
+                  Container(
+                    padding: EdgeInsets.fromLTRB(0, 10, 15, 0),
+                    child: Icon(Icons.notifications, color: Colors.grey,),
+                  ),
+
                   Container(
                     padding: EdgeInsets.all(25),
                     decoration: BoxDecoration(
@@ -62,7 +68,83 @@ class MyApp extends StatelessWidget {
                         Text("Total Balance", style: TextStyle(color: Colors.white),),
                       ],
                     ),
-                  )
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+              child: Row(
+                children: [
+                  Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.red[200],
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          padding: EdgeInsets.all(17),
+                          child: Icon(Icons.send, color: Colors.red),
+                        ),
+                        SizedBox(height: 5),
+                        Text('Send', style: TextStyle(fontSize: 12)),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 19),
+                  Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blue[200],
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          padding: EdgeInsets.all(17),
+                          child: Icon(Icons.shopping_bag, color: Colors.blue),
+                        ),
+                        SizedBox(height: 5),
+                        Text('Activities', style: TextStyle(fontSize: 12)),
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(width: 19),
+                  Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.pink[200],
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          padding: EdgeInsets.all(17),
+                          child: Icon(Icons.bar_chart, color: Colors.pink),
+                        ),
+                        SizedBox(height: 5),
+                        Text('Stats', style: TextStyle(fontSize: 12)),
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(width: 19),
+                  Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.green[200],
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          padding: EdgeInsets.all(17),
+                          child: Icon(Icons.wallet, color: Colors.green),
+                        ),
+                        SizedBox(height: 5),
+                        Text('Payment', style: TextStyle(fontSize: 12)),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )
